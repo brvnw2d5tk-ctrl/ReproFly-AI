@@ -5,6 +5,10 @@ ReproFly-AI evaluates blinded, tool-mediated target search in the male
 package contains the benchmark library, frozen paper-level results, figure
 sources and rendering code for offline reproduction.
 
+The public project repository is <https://github.com/brvnw2d5tk-ctrl/ReproFly-AI>.
+This project release is distributed through GitHub; no separate Zenodo record
+or project DOI is used.
+
 ## Reproduce the reported results
 
 Python 3.11+ is required. Install the pinned environment from

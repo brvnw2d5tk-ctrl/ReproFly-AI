@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "If you use ReproFly-AI, please cite this software and the accompanying manuscript."
 title: "ReproFly-AI: a blinded, tool-mediated autonomous-scientist benchmark on the complete male Drosophila CNS connectome"
+repository-code: "https://github.com/brvnw2d5tk-ctrl/ReproFly-AI"
 version: v1.0.0
 date-released: "2026-09-27"
 license: MIT

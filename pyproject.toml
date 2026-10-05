@@ -9,6 +9,7 @@ description = "ReproFly-AI: a blinded, tool-mediated autonomous-scientist benchm
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
+urls = { Repository = "https://github.com/brvnw2d5tk-ctrl/ReproFly-AI" }
 dependencies = [
     "numpy>=1.26",
     "pandas>=2.1",
