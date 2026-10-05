@@ -1,0 +1,36 @@
+{
+ "record_kind": "PHASE2C1_STAGE1_ATTEMPT_003_STATUS",
+ "PHASE2C1_STAGE1_ATTEMPT_003_STATUS": "COMPLETE",
+ "AUTHORITATIVE_TRAJECTORIES": 700,
+ "TRAJECTORY_BUNDLE_FROZEN": true,
+ "GT_SCORING_PERFORMED": false,
+ "AUTSRC_COMPUTED": false,
+ "GT_HITS_INSPECTED": false,
+ "GO_RECORD_v1_5_SHA256": "5fc30346aa33de90dab4a6d0efcd6096ea9b2ac30ef2243bb2073ec4f509f229",
+ "PHASE2C1_TRAJECTORY_BUNDLE_HASH": "d81dd0088f337df749d47a55275255202fd5df13e7207fcbab1f8d1b4e76908d",
+ "BUNDLE_MANIFEST_TSV_SHA256": "fcdad533f6ba52785d9aba60fe782ddc5e549bbe9f2693dede2a83e91740dc7a",
+ "BUNDLE_METADATA_SHA256": "795a1da32ca09247c08d0ecabea70e25dc6991a7a370692992a697aa0c039bcb",
+ "post_flight": {
+  "total_700": true,
+  "per_variant_100": true,
+  "charged_300_each": true,
+  "valid_300_each": true,
+  "inspections_le_600": true,
+  "no_duplicate_valid_target": true,
+  "seed_schedule_exact": true,
+  "oracle_domain_integrity": "PASS (all silences within TYPE_MEMBERS_ORACLE; zero oracle rejections across 210,000 charged attempts)",
+  "spec_unchanged": true,
+  "runner_unchanged": true,
+  "git_head_unchanged": true,
+  "gt_firewall": "PASS",
+  "deterministic_replay_9_predeclared": "9/9 BYTE-IDENTICAL",
+  "b_g5": {
+   "variant": "C1",
+   "rep": 0,
+   "runtime_s": 166.3,
+   "envelope_s": 1800,
+   "status": "PASS"
+  }
+ },
+ "generated_utc": "2026-09-27T00:39:40Z"
+}

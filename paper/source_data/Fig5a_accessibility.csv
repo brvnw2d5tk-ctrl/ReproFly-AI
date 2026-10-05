@@ -1,0 +1,10 @@
+gt_set,target,set_size,stage,count
+GTSET_LC10A,LC10a,1,visible_top10,1
+GTSET_LC10A,LC10a,1,inspected,0
+GTSET_LC10A,LC10a,1,valid_perturbed,0
+GTSET_PCD,PCD,13,visible_top10,12
+GTSET_PCD,PCD,13,inspected,2
+GTSET_PCD,PCD,13,valid_perturbed,1
+GTSET_CRZ,CRZ,1,visible_top10,0
+GTSET_CRZ,CRZ,1,inspected,0
+GTSET_CRZ,CRZ,1,valid_perturbed,0

@@ -1,0 +1,25 @@
+# DEV mode overlay: engineering exploration. Budgets may be reset by the
+# operator (each reset is logged as a protocol event). Future (stub) tools
+# are callable so their response contract can be inspected — they still
+# return NOT_IMPLEMENTED and never fabricate results.
+
+[mode]
+name = "DEV"
+
+[protocol]
+perturbation_budget = 0     # Phase 0: perturbation stays impossible
+query_budget = 500
+tool_allowlist = [
+    "health_check",
+    "get_protocol_status",
+    "get_dataset_version",
+    "get_remaining_budget",
+    "get_oracle_status",
+    "inspect_blind_type",
+    "inspect_neighbors",
+    "run_silencing",
+    "run_activation",
+    "compare_matched_controls",
+    "submit_hypothesis",
+    "submit_candidates",
+]

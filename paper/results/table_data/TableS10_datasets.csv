@@ -1,0 +1,5 @@
+item,detail
+connectome,complete male Drosophila CNS connectome (frozen canonical graph; see Level-2 reproducibility package for public dataset URL/DOI + SHA256)
+target_sets,"{""GTSET_LC10A"": 1, ""GTSET_PCD"": 13, ""GTSET_CRZ"": 1}"
+glue_runs,"10 formal GLM-5.3 autonomous Scientist runs (AI_RUN_001..010), 300 charged attempts each"
+matched_control_runs,700 trajectories = 7 arms x 100 reps x 300 charged attempts

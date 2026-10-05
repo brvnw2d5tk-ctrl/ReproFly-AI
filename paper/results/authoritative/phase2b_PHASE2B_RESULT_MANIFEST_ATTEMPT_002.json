@@ -1,0 +1,118 @@
+{
+  "record_kind": "PHASE2B_RESULT_MANIFEST_ATTEMPT_002",
+  "attempt_number": "002",
+  "status": "COMPLETE",
+  "classification": "POST-HOC / EXPLORATORY",
+  "plan_version": "v1.0.1",
+  "execution_started_utc": "2026-09-26T05:28:50.433498+00:00",
+  "execution_finished_utc": "2026-09-26T05:29:03.857590+00:00",
+  "git_HEAD": "0d3eb2e3f392db9c1decab1d378ac36d28fdda71",
+  "pins": {
+    "PHASE2B_ANALYSIS_PLAN_v1.0.1.md": "8956c11dc508a30b4b2a4a1a2bf2ba9f2616ed40d18a62c8a22ebac7451de720",
+    "PHASE2B_ANALYSIS_PLAN_v1.0.1.json": "08ee53d626a71f75e57a4aba1a2eaeda587f627d229622a2fd2f8e418dd9881a",
+    "PHASE2B_INPUT_MANIFEST.tsv": "9cdae7957acfac2d3dbb7a6e985aecdad9f739157d1df9c5d3d934e6b0cd553c",
+    "PHASE2B_EXECUTION_MANIFEST_v1.1.tsv": "45e3bc0259ddd3854d5a6fdd970cbaa76caeedd3cd42277994191198f4b1d341",
+    "behavior_metrics.py": "c24b4a68883aaf917929bfe619f3f819e98e09b6c29102887eef629138bc29d4",
+    "sealed_helper.py_v1_1_corrected": "066650416b1d2a7eb97ed085d06b08fdbfb467866dbc177ae711375599246b95",
+    "run_phase2b.py": "12c0e0606a8f5422d4b2dba826dfb63e2bb1b3159c82800781c5718ff1651445",
+    "SEALED_SCORING_RESULTS_v1.1_CORRECTED.json": "9327539693b5dbbb729e373a2080dbe762a965bc6112e0cb3fbd60cc1c02d4e8",
+    "PHASE2A_SCORING_CORRECTION_MANIFEST.json": "60750142d9b80ac8b06c8a15021dd47db4633bd1b75ee4bf5ab0ed3acaeb658e",
+    "FORMAL_RUN_BUNDLE_HASH_source_manifest_sha256": "6a6ff3f3aedc2f9cd26865e5293ea1236cb86e14453ecef8b3b1b9602f273c0c",
+    "FORMAL_RUN_BUNDLE_HASH": "6a6ff3f3aedc2f9cd26865e5293ea1236cb86e14453ecef8b3b1b9602f273c0c",
+    "ORACLE_SENSITIVITY_RESULTS.json": "6b55f7566f56882978e007250671f2f291ff8ddc388e66fd78b887587e83c2e9",
+    "ranking_weighted_strength.json": "be7f81894c3381aad10fd7096ddfd7d96a74f646b8c8d830e5df44b20e89a872",
+    "ranking_weighted_pagerank.json": "9ae6105acd662260dcff92386ea51037172d92bcd8be7998be15f84a3fdba766",
+    "ranking_baseline_visit_mass.json": "803e04a1261991126a629196696761cbdedba0cdb30b34cc9cd5e49521664ca9",
+    "attempt_timeline.py": "e618c56bd1cf0428942be9f40aad15e0309ea45e52e9a1fceff76cdf6d8cc149"
+  },
+  "post_flight_freeze": {
+    "all_frozen_hashes_match": true,
+    "detail": {
+      "derived_private/phase2b/PHASE2B_ANALYSIS_PLAN_v1.0.1.md": true,
+      "derived_private/phase2b/PHASE2B_ANALYSIS_PLAN_v1.0.1.json": true,
+      "derived_private/phase2b/PHASE2B_INPUT_MANIFEST.tsv": true,
+      "derived_private/phase2b/PHASE2B_EXECUTION_MANIFEST_v1.1.tsv": true,
+      "derived_private/phase2b/code/behavior_metrics.py": true,
+      "derived_private/phase2b/code/sealed_helper.py": true,
+      "derived_private/phase2b/code/run_phase2b.py": true
+    }
+  },
+  "result_files": [
+    {
+      "path": "PHASE2B_BEHAVIOR_RESULTS.json",
+      "size_bytes": 1031174,
+      "sha256": "e74c968b5066d5b720ee737c38385f767aabafec0413a4e0c9d193a148c09e70"
+    },
+    {
+      "path": "PHASE2B_EXECUTION_TIMES.json",
+      "size_bytes": 97,
+      "sha256": "26947a6b7ee7bee18f44f824319b7f531cfc39d24f31fc195fd6780a92a3b97b"
+    },
+    {
+      "path": "PHASE2B_M10_OUTCOME_ASSOCIATIONS.csv",
+      "size_bytes": 23473,
+      "sha256": "3ca1f494ac4b730bc92ae5401819755ee5617428dce99fce74cb39c7f028bacf"
+    },
+    {
+      "path": "PHASE2B_M11_FIRST_HIT_PREFIX_ANALYSIS.csv",
+      "size_bytes": 8104,
+      "sha256": "145004b013d1c5bf3f57e9e9d919e27cfb851583975a2e72a4208e3d60719b53"
+    },
+    {
+      "path": "PHASE2B_M12_TARGETSET_ACCESSIBILITY_AGGREGATED.json",
+      "size_bytes": 4314,
+      "sha256": "8a498b5fd365ad3a413611449950954bd8eb14472ae9c7bdf8ccb72ed806de8d"
+    },
+    {
+      "path": "PHASE2B_M13_ORACLE_RELABELING_SENSITIVITY.csv",
+      "size_bytes": 36935,
+      "sha256": "0d8baf5bd18993608743d6fd7fb4b12a13906856e8ab87ae879a2c12ca74cde4"
+    },
+    {
+      "path": "PHASE2B_M1_RUN_PROFILE.csv",
+      "size_bytes": 1254,
+      "sha256": "53764692c01cace1f25bb2db680e55482e24284bd03907c47b75a48bbdccc914"
+    },
+    {
+      "path": "PHASE2B_M2_FIRST_VALID_TIMING.csv",
+      "size_bytes": 380,
+      "sha256": "03a519e5f88bf7ab3e0ddaec180c31cc797ffd64bd457c4978542f62a223973c"
+    },
+    {
+      "path": "PHASE2B_M3_INSPECTION_PERTURBATION_TRAJECTORY.csv",
+      "size_bytes": 120887,
+      "sha256": "72160dd835d907ade5b63bde07180ff570695003e4f573967aa25c2110e34a95"
+    },
+    {
+      "path": "PHASE2B_M4_SEARCH_MODE.csv",
+      "size_bytes": 3905,
+      "sha256": "d4658ac38b7e07dfb7a614c9b3708f5271985c61023e965da71c859bc46790ce"
+    },
+    {
+      "path": "PHASE2B_M5_LOCAL_CONTINUATION.csv",
+      "size_bytes": 917,
+      "sha256": "63f32ab3f5e68e300c21beda410942f2dcebfbb5fd58c36fa554f9f20d76451c"
+    },
+    {
+      "path": "PHASE2B_M7_PREDICTION_OUTCOME.csv",
+      "size_bytes": 3928,
+      "sha256": "e17a02a42e7bd2ed1d55aa42251a37f277b13c9c5d90f52181136a1b6252d62a"
+    },
+    {
+      "path": "PHASE2B_M8_RESPONSE_NEXT_BEHAVIOR.csv",
+      "size_bytes": 5007,
+      "sha256": "ca213e0c2ade9a34feb541a5cb49636f941a3f9d129b59a8846c773351184004"
+    },
+    {
+      "path": "PHASE2B_M9_BASELINE_ALIGNMENT.csv",
+      "size_bytes": 4504,
+      "sha256": "a0ea509f22a57ec52e0f5f84121a0aecfe898b2cc7a3c09ac77f2bbbd598389a"
+    },
+    {
+      "path": "PHASE2B_RESULT_MANIFEST.json",
+      "size_bytes": 4295,
+      "sha256": "a6ce51ecafa1a49ef8bdb337318af56788046cba1da00cf79c3d397d702e02ec"
+    }
+  ],
+  "manifest_self_note": "this manifest is not listed in result_files (a file cannot contain its own hash)"
+}

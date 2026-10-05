@@ -1,0 +1,48 @@
+# ReproFly-AI default configuration.
+# Overridden by config/dev.toml or config/paper.toml depending on REPROFLY_MODE.
+#
+# NOTE: the data ROOT is intentionally NOT set here. It must come from the
+# REPROFLY_DATA_ROOT environment variable (see .env.example) so that no
+# machine-specific absolute path is hardcoded anywhere in source control.
+
+[limits]
+# Files larger than this may NOT be read eagerly into memory; they must go
+# through lazy / backed / chunked readers.
+eager_read_max_bytes = 268435456   # 256 MiB
+
+[security]
+# Relative (POSIX-style) paths inside REPROFLY_DATA_ROOT that are PRIVATE
+# ground truth. These are ALSO hardcoded in src/reprofly/security/guards.py
+# as a defence-in-depth default; this list is the configurable superset.
+private_dirs = [
+    "05_BrainGonad_groundtruth",
+    "13_Reproductive_Circuit_GroundTruth",
+    "15_Project_Documentation/04_Ground_Truth_PRIVATE",
+]
+
+[datasets]
+# Relative paths (POSIX) of the public assets exposed by the Data Access Layer.
+malecns_annotations_rel = "01_MaleCNS_v1/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather"
+malecns_edges_rel = "01_MaleCNS_v1/raw/syn-partners-male-cns-v1.0-minconf-0.5.feather"
+# Aggregated directed-pair weights (151.9M rows, 1.1 GB) — the PRIMARY edge
+# source for the v1.0 canonical graph (see PHASE 0.5 charter).
+malecns_connectome_weights_rel = "01_MaleCNS_v1/raw/connectome-weights-male-cns-v1.0-minconf-0.5.feather"
+malecns_neurotransmitters_rel = "01_MaleCNS_v1/raw/body-neurotransmitters-male-cns-v1.0.feather"
+banc_metadata_rel = "08_BANC_female_v888/raw/banc_888_meta.feather"
+fca_all_h5ad_rel = "09_FCA_FullGene/All/raw/v2_fca_biohub_all_wo_blood_10x_raw.h5ad"
+asset_index_rel = "00_manifest/master_manifest.tsv"
+
+[protocol]
+protocol_version = "phase0-0.1.0"
+dataset_version = "Drosophila_AI_Repro@2026-09-24"
+# Phase 0: no perturbation or biology is possible at all; the engineering
+# tools below consume query budget only.
+perturbation_budget = 0
+query_budget = 1000
+tool_allowlist = [
+    "health_check",
+    "get_protocol_status",
+    "get_dataset_version",
+    "get_remaining_budget",
+    "get_oracle_status",
+]

@@ -1,0 +1,250 @@
+{
+ "primary_GLM_vs_D1": {
+  "glm": {
+   "median": 0.028888888888888888,
+   "iqr": [
+    0.0,
+    0.12222222222222222
+   ],
+   "min": 0.0,
+   "max": 0.28777777777777774,
+   "zero_frac": 0.5,
+   "n": 10
+  },
+  "d1": {
+   "median": 0.0,
+   "iqr": [
+    0.0,
+    0.11499999999999999
+   ],
+   "min": 0.0,
+   "max": 0.32,
+   "zero_frac": 0.67,
+   "n": 100
+  },
+  "glm_median_percentile_in_D1": 68.0,
+  "glm_run_percentiles_in_D1": [
+   93.0,
+   33.5,
+   33.5,
+   70.0,
+   33.5,
+   33.5,
+   80.5,
+   94.5,
+   33.5,
+   71.0
+  ],
+  "cliffs_delta": 0.153,
+  "permutation": {
+   "T": 0.028888888888888888,
+   "p": 0.17698230176982302
+  },
+  "label": "POST-HOC / EXPLORATORY ONLY"
+ },
+ "glm_vs_C2": {
+  "c2": {
+   "median": 0.0,
+   "iqr": [
+    0.0,
+    0.0
+   ],
+   "min": 0.0,
+   "max": 0.3222222222222222,
+   "zero_frac": 0.85,
+   "n": 100
+  },
+  "glm_median_percentile_in_C2": 85.0,
+  "cliffs_delta": 0.325,
+  "label": "SECONDARY matched-information non-adaptive contrast"
+ },
+ "all_variants": {
+  "C1": {
+   "autsrc": {
+    "median": 0.0,
+    "iqr": [
+     0.0,
+     0.1061111111111111
+    ],
+    "min": 0.0,
+    "max": 0.3244444444444444,
+    "zero_frac": 0.65,
+    "n": 100
+   },
+   "pcd_recovery_frac": 0.3,
+   "lc10a_recovery_frac": 0.01,
+   "crz_recovery_frac": 0.07,
+   "first_hit_median_among_hits": 168.0,
+   "n_with_hit": 35,
+   "recall_medians": {
+    "50": 0.0,
+    "100": 0.0,
+    "200": 0.0,
+    "300": 0.0
+   }
+  },
+  "C2": {
+   "autsrc": {
+    "median": 0.0,
+    "iqr": [
+     0.0,
+     0.0
+    ],
+    "min": 0.0,
+    "max": 0.3222222222222222,
+    "zero_frac": 0.85,
+    "n": 100
+   },
+   "pcd_recovery_frac": 0.03,
+   "lc10a_recovery_frac": 0.12,
+   "crz_recovery_frac": 0.0,
+   "first_hit_median_among_hits": 152.0,
+   "n_with_hit": 15,
+   "recall_medians": {
+    "50": 0.0,
+    "100": 0.0,
+    "200": 0.0,
+    "300": 0.0
+   }
+  },
+  "C3": {
+   "autsrc": {
+    "median": 0.018888888888888886,
+    "iqr": [
+     0.0,
+     0.09444444444444444
+    ],
+    "min": 0.0,
+    "max": 0.3322222222222222,
+    "zero_frac": 0.46,
+    "n": 100
+   },
+   "pcd_recovery_frac": 0.03,
+   "lc10a_recovery_frac": 0.51,
+   "crz_recovery_frac": 0.0,
+   "first_hit_median_among_hits": 217.0,
+   "n_with_hit": 54,
+   "recall_medians": {
+    "50": 0.0,
+    "100": 0.0,
+    "200": 0.0,
+    "300": 0.3333333333333333
+   }
+  },
+  "D1": {
+   "autsrc": {
+    "median": 0.0,
+    "iqr": [
+     0.0,
+     0.11499999999999999
+    ],
+    "min": 0.0,
+    "max": 0.32,
+    "zero_frac": 0.67,
+    "n": 100
+   },
+   "pcd_recovery_frac": 0.14,
+   "lc10a_recovery_frac": 0.2,
+   "crz_recovery_frac": 0.0,
+   "first_hit_median_among_hits": 162.0,
+   "n_with_hit": 33,
+   "recall_medians": {
+    "50": 0.0,
+    "100": 0.0,
+    "200": 0.0,
+    "300": 0.0
+   }
+  },
+  "D2a": {
+   "autsrc": {
+    "median": 0.0,
+    "iqr": [
+     0.0,
+     0.11611111111111111
+    ],
+    "min": 0.0,
+    "max": 0.6133333333333333,
+    "zero_frac": 0.56,
+    "n": 100
+   },
+   "pcd_recovery_frac": 0.32,
+   "lc10a_recovery_frac": 0.17,
+   "crz_recovery_frac": 0.0,
+   "first_hit_median_among_hits": 161.0,
+   "n_with_hit": 44,
+   "recall_medians": {
+    "50": 0.0,
+    "100": 0.0,
+    "200": 0.0,
+    "300": 0.0
+   }
+  },
+  "D2b": {
+   "autsrc": {
+    "median": 0.0,
+    "iqr": [
+     0.0,
+     0.0775
+    ],
+    "min": 0.0,
+    "max": 0.6422222222222221,
+    "zero_frac": 0.63,
+    "n": 100
+   },
+   "pcd_recovery_frac": 0.29,
+   "lc10a_recovery_frac": 0.13,
+   "crz_recovery_frac": 0.0,
+   "first_hit_median_among_hits": 166.0,
+   "n_with_hit": 37,
+   "recall_medians": {
+    "50": 0.0,
+    "100": 0.0,
+    "200": 0.0,
+    "300": 0.0
+   }
+  },
+  "D3": {
+   "autsrc": {
+    "median": 0.0,
+    "iqr": [
+     0.0,
+     0.0911111111111111
+    ],
+    "min": 0.0,
+    "max": 0.5111111111111111,
+    "zero_frac": 0.59,
+    "n": 100
+   },
+   "pcd_recovery_frac": 0.17,
+   "lc10a_recovery_frac": 0.28,
+   "crz_recovery_frac": 0.0,
+   "first_hit_median_among_hits": 198.0,
+   "n_with_hit": 41,
+   "recall_medians": {
+    "50": 0.0,
+    "100": 0.0,
+    "200": 0.0,
+    "300": 0.0
+   }
+  }
+ },
+ "glm_values": [
+  0.2755555555555555,
+  0.0,
+  0.0,
+  0.057777777777777775,
+  0.0,
+  0.0,
+  0.13666666666666666,
+  0.28777777777777774,
+  0.0,
+  0.07888888888888888
+ ],
+ "global_baselines": {
+  "weighted_strength": 0.2789,
+  "weighted_pagerank": 0.2689,
+  "baseline_visit_mass": 0.0,
+  "random_null_p95": 0.2922,
+  "note": "authoritative Phase 2A values (information-ASYMMETRIC: full graph access)"
+ }
+}

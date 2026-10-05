@@ -1,0 +1,333 @@
+{
+  "manifest": "FIGURE_SOURCE_MANIFEST_current",
+  "visual_version": "2026-10-03 approved v2 redesign",
+  "scope": "20 main figure panels; schematic geometry is illustrative",
+  "figure_pdf_sha256": {
+    "Figure1.pdf": "c268107e195d1c6dbb2064715aaa5c4b41c96bcbbcd43a918125754c944d8a46",
+    "Figure2.pdf": "173316c3dca23e76d7a1609b086a81ab08910601dfb07ffe901836aea09216ef",
+    "Figure3.pdf": "deea5fe6cbc122dd26ee787cbad61902aebfc0607f857ce8a5dea507afe0186d",
+    "Figure4.pdf": "cd09b4d1bd7ee388dca06dd8848b3382638013c1238995f0b21483db8d5072e4",
+    "Figure5.pdf": "8fd5b4dcac665b298e850b525ec7c537786f0e65ffed5106413d9d845ff385cc"
+  },
+  "figure_png_sha256": {
+    "Figure1.png": "b429ffc079d7e291c4a5ce6c47d21fb0a2c9114cf895006f326a3a24228b4c90",
+    "Figure2.png": "e123962dba66f36dd9e71cd76d9aad7f6320ef8666f740892b6aa01ad32137ed",
+    "Figure3.png": "9c0cce5a005a9c40fb41f4c25f52a3bf835fc8e3e5134a375748dc030f57741c",
+    "Figure4.png": "e4b12f44e75e025b20620380f07005577aa8b9420f2154b7c05b1f88adb39dc8",
+    "Figure5.png": "da90095c7714b4821dbb0ec3ebafb57dab910a936def6b86bcb86a2204066f98"
+  },
+  "source_csv_sha256": {
+    "Fig1a_design_constants.csv": "c8891f5f71a1be14107e0a61ea21fe5f743cc562fec02fd2e24d035368a42328",
+    "Fig2a_formal_runs.csv": "de5e1b771005504c4b6695595ef67d46ed72ab75dd486f0233fbc18d5a5c756d",
+    "Fig2a_summary.csv": "917392c8f78ebaf23ec09816bfeb13315d7e8fece1486b68bf281fe5977aacf9",
+    "Fig2b_glm_overlay.csv": "c070641f67c70ef8b75a50f14898e88562e0468f56a76e2a6ea8c322d7326a9d",
+    "Fig2b_random_null_quantiles.csv": "04a2e99a6ca195a392ab25a60b09971aca9c61f6734995e31b4c221544f3f275",
+    "Fig2c_glm_runs.csv": "de5e1b771005504c4b6695595ef67d46ed72ab75dd486f0233fbc18d5a5c756d",
+    "Fig2c_graph_baselines.csv": "da74d957c903547f65911ad06c0e11c83ad0ffe63dd111fd720dc345fd787984",
+    "Fig2d_target_recovery.csv": "826b5403f23afe5aede71e19d74d153f6c1ba73ef01e502e53789232cb426dde",
+    "Fig3a_associations.csv": "8237b59e535c1012a1e5bfebdf3c03acf62771e9949817b88ace42dcf7a70279",
+    "Fig3b_per_run.csv": "61df631e0e9e033c08676c30f1e85973293193c31b9146d64881cea5e2a868ae",
+    "Fig3c_m13_tiles.csv": "17b60ba4629e107143d6e4d7aa1b3201f35e8ca9c7edf6926c68cbee4f8aad2f",
+    "Fig4b_raincloud.csv": "daf58f4f1e965b3ead348cb9398af8ad697ed4e15eae18675ddfd073a18238a8",
+    "Fig4c_anyhit_ci.csv": "a80b98adb815ce09f15ab8643c13e183054a3a448d5e5bfcfb5f7ba00b40ae20",
+    "Fig4d_effects.csv": "995bd6b70fb8806b73b33b58fb495a090ef71f98ce6ea5cb431d7c45d53e8079",
+    "Fig4e_target_matrix.csv": "4ae5b1cadaec7abd1cc8cdac7caffbd08983bc7e76be4e64f2b92eed937a1023",
+    "Fig5a_accessibility.csv": "0fa776f92a1a1e897502dd52a973777de5c4c892a51582b1c01adc046252b9f3",
+    "Fig5b_ranks.csv": "57f63d1332da67f74e8f7afb6b8a49619a82aa9775dccc58444a0336a16d877e",
+    "Fig5c_policy_recovery.csv": "f3a27cdcbfd30e35f5f53f4ee2eec745603a683ede1e4ca1bebe923a20b4381f",
+    "SuppS10_recovery_full.csv": "77d88d6d37c918d6b4d7fa0e24270e0453b1d3bc17e6c74e15fd1cf6d6ed8cfe",
+    "SuppS8_checkpoints.csv": "672b0dbc386df5996424d9af53d471ec5de596b6a5589dd97976861aa2c6bab0",
+    "SuppS9_family_distributions.csv": "daf58f4f1e965b3ead348cb9398af8ad697ed4e15eae18675ddfd073a18238a8"
+  },
+  "manuscript_sha256": {
+    "manuscript_AI_benchmark": "955a5d8234d3705530ce6bffd1f1c35d8beb81d2eddf3d750d38440854743441",
+    "manuscript_Neuroinformatics": "e0f886d822feacd399581ebce1f98aa3341e1352f705bc305c73c3fab978c254"
+  },
+  "panels": [
+    {
+      "panel": "1A",
+      "scientific_meaning": "Locally revealed blinded search and sealed recovery evaluation",
+      "source_selection": "Fig1a_design_constants.csv[all=14]",
+      "source_files": [
+        "Fig1a_design_constants.csv"
+      ],
+      "renderer": "figure1.py:build_figure1",
+      "visual_contract": "CSV item keys candidate_universe_n, glm_runs, charged_attempts_per_run, gt_pcd_m, gt_lc10a_m, gt_crz_m, random_null_permutations; illustrative seeded geometry",
+      "visible_tokens": "11,657 candidates ~~ 10 runs × 300 charged attempts ~~ 10,000 permutations ~~ PCD · 13 ~~ LC10a · 1 ~~ CRZ · 1 ~~ Illustrative search geometry; schematic",
+      "results_anchor": "Results 3.1",
+      "legend_anchor": "Figure 1A",
+      "status": "PASS"
+    },
+    {
+      "panel": "1B",
+      "scientific_meaning": "Anonymous local records delivered; names, target mapping and full graph withheld",
+      "source_selection": "schematic:1B",
+      "source_files": [],
+      "renderer": "figure1.py:build_figure1",
+      "visual_contract": "Information boundary is categorical; no measured geometry",
+      "visible_tokens": "Anonymous local records ~~ Names Target mapping Full graph ~~ Schematic visibility surface",
+      "results_anchor": "Results 3.1",
+      "legend_anchor": "Figure 1B",
+      "status": "PASS"
+    },
+    {
+      "panel": "1C",
+      "scientific_meaning": "Virtual silencing produces a deterministic structural endpoint proxy",
+      "source_selection": "schematic:1C",
+      "source_files": [],
+      "renderer": "figure1.py:build_figure1",
+      "visual_contract": "Structural proxy visibly distinguished from physiology",
+      "visible_tokens": "Virtual silencing ~~ Deterministic propagation ~~ Structural endpoint proxy ~~ Schematic · not physiology",
+      "results_anchor": "Results 3.1",
+      "legend_anchor": "Figure 1C",
+      "status": "PASS"
+    },
+    {
+      "panel": "1D",
+      "scientific_meaning": "Formal benchmark precedes post-hoc behaviour and matched controls",
+      "source_selection": "Fig1a_design_constants.csv[all=14]",
+      "source_files": [
+        "Fig1a_design_constants.csv"
+      ],
+      "renderer": "figure1.py:build_figure1",
+      "visual_contract": "Three equal arc sectors encode phase order only; source-derived glm_runs × charged_attempts_per_run = 10 × 300 and matched_arms × matched_runs_per_arm = 7 × 100; M1–M13 is the post-hoc method range, not a count-derived geometry",
+      "visible_tokens": "Phase 2A ~~ Formal benchmark ~~ 10 × 300 ~~ Phase 2B ~~ Post-hoc behaviour ~~ M1–M13 ~~ Phase 2C.1 ~~ Matched controls ~~ 7 × 100 ~~ FORMAL → POST-HOC",
+      "results_anchor": "Results 3.1",
+      "legend_anchor": "Figure 1D",
+      "status": "PASS"
+    },
+    {
+      "panel": "2A",
+      "scientific_meaning": "Ten independent endpoints include five zero scores",
+      "source_selection": "Fig2a_formal_runs.csv[all=10]; Fig2a_summary.csv[all=1]",
+      "source_files": [
+        "Fig2a_formal_runs.csv",
+        "Fig2a_summary.csv"
+      ],
+      "renderer": "figure2.py:build_figure2",
+      "visual_contract": "AUTSRC strips terminate at all 10 scores; summary median 0.0289 and IQR 0–0.1222; strips encode score only",
+      "visible_tokens": "0.0289 ~~ Median + IQR ~~ score strips; not attempt trajectories",
+      "results_anchor": "Results 3.2",
+      "legend_anchor": "Figure 2A",
+      "status": "PASS"
+    },
+    {
+      "panel": "2B",
+      "scientific_meaning": "Five runs exceed the null median and none exceed p95",
+      "source_selection": "Fig2b_random_null_quantiles.csv[series=random_null_median,random_null_p95,random_null_ci95_high,random_null_max]; Fig2b_glm_overlay.csv[all=10]",
+      "source_files": [
+        "Fig2b_random_null_quantiles.csv",
+        "Fig2b_glm_overlay.csv"
+      ],
+      "renderer": "figure2.py:build_figure2",
+      "visual_contract": "Four landmarks at 0, 0.292222, 0.316667, 0.785556; ten actual GLM scores; no empirical density inference",
+      "visible_tokens": "5/10 > median; 0/10 > p95 ~~ median 0.000 ~~ p95 0.292 ~~ p97.5 0.317 ~~ max 0.786",
+      "results_anchor": "Results 3.2",
+      "legend_anchor": "Figure 2B",
+      "status": "PASS"
+    },
+    {
+      "panel": "2C",
+      "scientific_meaning": "Full-information references use information unavailable to GLM",
+      "source_selection": "Fig2c_graph_baselines.csv[all=4]; Fig2c_glm_runs.csv[all=10]",
+      "source_files": [
+        "Fig2c_graph_baselines.csv",
+        "Fig2c_glm_runs.csv"
+      ],
+      "renderer": "figure2.py:build_figure2",
+      "visual_contract": "Strength 0.278889, PageRank 0.268889, visit mass 0; GLM median and IQR with all individual scores",
+      "visible_tokens": "Full-information references ~~ information-asymmetric / not matched ~~ Strength ~~ PageRank ~~ Visit mass",
+      "results_anchor": "Results 3.2",
+      "legend_anchor": "Figure 2C",
+      "status": "PASS"
+    },
+    {
+      "panel": "2D",
+      "scientific_meaning": "Formal-run target recovery is confined to PCD",
+      "source_selection": "Fig2d_target_recovery.csv[all=3]",
+      "source_files": [
+        "Fig2d_target_recovery.csv"
+      ],
+      "renderer": "figure2.py:build_figure2",
+      "visual_contract": "Ten circles per target; PCD five filled, LC10a and CRZ zero; run denominator retained",
+      "visible_tokens": "PCD ~~ LC10a ~~ CRZ ~~ 5/10 ~~ 0/10 ~~ Each circle = one run",
+      "results_anchor": "Results 3.2",
+      "legend_anchor": "Figure 2D",
+      "status": "PASS"
+    },
+    {
+      "panel": "3A",
+      "scientific_meaning": "Stated predictions associate with subsequent local or de-novo actions",
+      "source_selection": "Fig3a_associations.csv[all=8]",
+      "source_files": [
+        "Fig3a_associations.csv"
+      ],
+      "renderer": "figure3.py:build_figure3",
+      "visual_contract": "Eight medians and IQRs with computable n; primary local +0.368335 (10), de novo −0.825965 (8); controls retained",
+      "visible_tokens": "Median + IQR; computable runs ~~ Local continuation ~~ De-novo exploration ~~ n=10 ~~ n=8",
+      "results_anchor": "Results 3.3",
+      "legend_anchor": "Figure 3A",
+      "status": "PASS"
+    },
+    {
+      "panel": "3B",
+      "scientific_meaning": "Primary association direction is consistent in computable runs",
+      "source_selection": "Fig3b_per_run.csv[all=10]",
+      "source_files": [
+        "Fig3b_per_run.csv"
+      ],
+      "renderer": "figure3.py:build_figure3",
+      "visual_contract": "Ten paired run rows; two de-novo values explicitly not computable; no time axis",
+      "visible_tokens": "paired values; not time series ~~ not computable ~~ Run-level association",
+      "results_anchor": "Results 3.3",
+      "legend_anchor": "Figure 3B",
+      "status": "PASS"
+    },
+    {
+      "panel": "3C",
+      "scientific_meaning": "Primary concordance is 1.0; controls are at least 0.70",
+      "source_selection": "Fig3c_m13_tiles.csv[all=32]",
+      "source_files": [
+        "Fig3c_m13_tiles.csv"
+      ],
+      "renderer": "figure3.py:build_figure3",
+      "visual_contract": "4×8 matrix in frozen L5/L13/ge5/overlap_excluded order; primary/control split; darker means lower; 28/32 cells at least 0.90",
+      "visible_tokens": "Oracle-relabeling sensitivity ~~ Primary ~~ Control 1 ~~ Overlap excluded ~~ 1.00 ~~ 0.70 ~~ Sign concordance (darker = lower)",
+      "results_anchor": "Results 3.3",
+      "legend_anchor": "Figure 3C",
+      "status": "PASS"
+    },
+    {
+      "panel": "3D",
+      "scientific_meaning": "Local continuation and de-novo exploration are association interpretations",
+      "source_selection": "schematic:3D",
+      "source_files": [],
+      "renderer": "figure3.py:build_figure3",
+      "visual_contract": "Shared seed-42 schematic_manifold with contours and progressive paths; higher/lower prediction labels distinguish local continuation and de-novo jump; de-novo-space gid binds the companion; geometry is illustrative association, not a measured or causal decision path",
+      "visible_tokens": "higher prediction ~~ local continuation ~~ lower prediction ~~ de-novo jump ~~ schematic association · not causal",
+      "results_anchor": "Results 3.3",
+      "legend_anchor": "Figure 3D",
+      "status": "PASS"
+    },
+    {
+      "panel": "4A",
+      "scientific_meaning": "C2 local greed and D1 record-minimum restart are distinct policy operations",
+      "source_selection": "schematic:4A",
+      "source_files": [],
+      "renderer": "figure4.py:build_figure4",
+      "visual_contract": "Shared seed-42 schematic_manifold with distinct progressive paths; C2 local-only operations versus D1 dashed restart with explicit termination glyphs; schematic policy authority remains legend 4A and Methods 2.7; histories are not identical",
+      "visible_tokens": "C2 · greedy local ~~ D1 · record-minimum restart ~~ local-only ~~ restart ~~ illustrative policy geometry · histories are not identical",
+      "results_anchor": "Results 3.4",
+      "legend_anchor": "Figure 4A",
+      "status": "PASS"
+    },
+    {
+      "panel": "4B",
+      "scientific_meaning": "Matched score distributions overlap and include substantial zero mass",
+      "source_selection": "Fig4b_raincloud.csv[arm=GLM:10,C2:100,D1:100]",
+      "source_files": [
+        "Fig4b_raincloud.csv"
+      ],
+      "renderer": "figure4.py:build_figure4",
+      "visual_contract": "Select 210 of 710 source records: GLM 10/C2 100/D1 100 observations; half-density, median, quartile and zero-count layers; sample-size maxima not a tail advantage",
+      "visible_tokens": "All runs · density + observations + IQR + median ~~ GLM (n=10) ~~ C2 (n=100) ~~ D1 (n=100) ~~ 5/10 zero",
+      "results_anchor": "Results 3.4",
+      "legend_anchor": "Figure 4B",
+      "status": "PASS"
+    },
+    {
+      "panel": "4C",
+      "scientific_meaning": "Any-hit estimates retain denominators and exact confidence intervals",
+      "source_selection": "Fig4c_anyhit_ci.csv[all=3]",
+      "source_files": [
+        "Fig4c_anyhit_ci.csv"
+      ],
+      "renderer": "figure4.py:build_figure4",
+      "visual_contract": "GLM 5/10, C2 15/100, D1 33/100; source ci95_low/high plotted without recalculation",
+      "visible_tokens": "Exact binomial 95% CI ~~ GLM 5/10 ~~ C2 15/100 ~~ D1 33/100",
+      "results_anchor": "Results 3.4",
+      "legend_anchor": "Figure 4C",
+      "status": "PASS"
+    },
+    {
+      "panel": "4D",
+      "scientific_meaning": "GLM–D1 descriptive contrast is smaller than GLM–C2",
+      "source_selection": "Fig4d_effects.csv[all=2]",
+      "source_files": [
+        "Fig4d_effects.csv"
+      ],
+      "renderer": "figure4.py:build_figure4",
+      "visual_contract": "Cliff delta +0.153/+0.325; GLM-median percentiles 68/85; exploratory p=0.177 on D1 only",
+      "visible_tokens": "δ = 0.153 ~~ δ = 0.325 ~~ GLM median: 68th percentile ~~ GLM median: 85th percentile ~~ Exploratory p = 0.177 ~~ Secondary non-adaptive contrast",
+      "results_anchor": "Results 3.4",
+      "legend_anchor": "Figure 4D",
+      "status": "PASS"
+    },
+    {
+      "panel": "5A",
+      "scientific_meaning": "Target member coverage differs across three pooled recording states",
+      "source_selection": "Fig5a_accessibility.csv[all=9]",
+      "source_files": [
+        "Fig5a_accessibility.csv"
+      ],
+      "renderer": "figure5.py:build_figure5",
+      "visual_contract": "_coverage and member_state_array expand marginal counts into 15 display-only slots × 3 states; PCD 12/2/1 of 13, LC10a 1/0/0, CRZ 0/0/0; no inferred member correspondence",
+      "visible_tokens": "Independent count expansions · each slot is display-only ~~ 12/13 ~~ 2/13 ~~ 1/13 ~~ 1/1 ~~ 0/1 ~~ Slot order is neither time nor a within-run transition",
+      "results_anchor": "Results 3.5",
+      "legend_anchor": "Figure 5A",
+      "status": "PASS"
+    },
+    {
+      "panel": "5B",
+      "scientific_meaning": "Targets occupy distinct ranks under three full-information orderings",
+      "source_selection": "Fig5b_ranks.csv[all=9]",
+      "source_files": [
+        "Fig5b_ranks.csv"
+      ],
+      "renderer": "figure5.py:build_figure5",
+      "visual_contract": "Nine median_rank values on log rank 1–11657; marker shape encodes baseline; rank direction explicit",
+      "visible_tokens": "Full-information rank (log scale) ~~ Weighted strength ~~ Weighted PageRank ~~ Baseline visit mass ~~ 11,657",
+      "results_anchor": "Results 3.5",
+      "legend_anchor": "Figure 5B",
+      "status": "PASS"
+    },
+    {
+      "panel": "5C",
+      "scientific_meaning": "Recovery varies jointly by target and policy",
+      "source_selection": "Fig5c_policy_recovery.csv[all=8]",
+      "source_files": [
+        "Fig5c_policy_recovery.csv"
+      ],
+      "renderer": "figure5.py:build_figure5",
+      "visual_contract": "8×3 values, frozen GLM/C1/C2/C3/D1/D2a/D2b/D3 order; PCD/LC10a/CRZ columns; every cell printed",
+      "visible_tokens": "Frozen arm order · mean fraction ~~ 0.50 ~~ 0.51 ~~ 0.32 ~~ 0.07 ~~ D2a ~~ D2b",
+      "results_anchor": "Results 3.5",
+      "legend_anchor": "Figure 5C",
+      "status": "PASS"
+    },
+    {
+      "panel": "5D",
+      "scientific_meaning": "Pooled records distinguish PCD coverage, LC10a exposure and CRZ absence",
+      "source_selection": "Fig5a_accessibility.csv[all=9]",
+      "source_files": [
+        "Fig5a_accessibility.csv"
+      ],
+      "renderer": "figure5.py:build_figure5",
+      "visual_contract": "_coverage supplies nine independent marginal glyph counts: PCD 12/2/1, LC10a 1/0/0, CRZ 0/0/0; exposed/selected/recovered map to visible_top10/inspected/valid_perturbed; LC10a selection-stop and CRZ pre-exposure boundary; display-only slots carry no member identity, time, transition probability or causal funnel",
+      "visible_tokens": "Recorded target profiles — GLM ~~ display-only · no identity or time correspondence ~~ exposed ~~ selected ~~ recovered ~~ limited coverage ~~ not selected ~~ not exposed ~~ pooled descriptive records · not transition probabilities or a causal funnel",
+      "results_anchor": "Results 3.5",
+      "legend_anchor": "Figure 5D",
+      "status": "PASS"
+    }
+  ],
+  "renderer_code": {
+    "data_contract.py": "6aebbb3c33951b634189e8d01f86689006e949f15a158c49f1b9fa290237cff2",
+    "visual_primitives.py": "005a67bb92bd9b2d19e54474509101d47a2f0bd4f8e79888399ab4b33b61ed2f",
+    "figure1.py": "c877fd024878de89cf5e1feb884937a3c77e8ea5110d02f5d07ddf502852e292",
+    "figure2.py": "3403ecefadfe977d10aa3305f3594390abf826a081e25bab5a298e6ba1c26fe4",
+    "figure3.py": "1f0f5543e844fb1d574e41e93a51743174aafa531a1711408792beb85a403071",
+    "figure4.py": "1b15c2e4bffce06468cf2f8ce74fd09f8ca5a6d987fed50cf17e885e7c8fbf0d",
+    "figure5.py": "fd464528a2e2e7ff47468e91f596c78c045abeac21882c1e26cf125a37656fff",
+    "render_all.py": "f76ccc30a4f40836afadb5efa7614b65c14db13c2b768446436335ce46c7544a"
+  }
+}

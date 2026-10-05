@@ -1,0 +1,6 @@
+dataset	role	expected_location	url_or_doi	sha256	note
+male CNS connectome (MaleCNS v1.0)	primary connectome	controlled input (not included)	PENDING_RELEASE_URL	PENDING_RELEASE_SHA256	frozen source version
+BANC v888 + v2 edge list	supporting connectome/controls	controlled input (not included)	PENDING_RELEASE_URL	PENDING_RELEASE_SHA256	sensitivity source
+FlyPhone V2HM	synaptic-partner priors	controlled input (not included)	PENDING_RELEASE_URL	PENDING_RELEASE_SHA256	selected source version
+Drosophila neuropeptides v1.1.0	peptide oracle inputs	controlled input (not included)	PENDING_RELEASE_DOI	PENDING_RELEASE_SHA256	selected source version
+KNOWN_REPRODUCTIVE_CIRCUITS.tsv	private ground-truth evidence	controlled input (not included)	not public	not applicable	not redistributed; used to freeze blinded ground-truth sets

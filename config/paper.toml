@@ -1,0 +1,19 @@
+# PAPER mode overlay: the strict, publication-grade mode.
+#  - Budgets can only DECREASE (enforced by ProtocolController).
+#  - The protocol itself is immutable at runtime.
+#  - Only the four engineering tools are callable; every future scientific
+#    tool is denied (they are not implemented and must never run here).
+
+[mode]
+name = "PAPER"
+
+[protocol]
+perturbation_budget = 0     # Phase 0: perturbation stays impossible
+query_budget = 200
+tool_allowlist = [
+    "health_check",
+    "get_protocol_status",
+    "get_dataset_version",
+    "get_remaining_budget",
+    "get_oracle_status",
+]

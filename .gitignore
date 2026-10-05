@@ -1,0 +1,50 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- virtual environments ---
+.venv/
+venv/
+env/
+
+# --- secrets: NEVER commit real .env ---
+.env
+*.key
+*.token
+*.secret
+
+# --- runtime artifacts ---
+logs/*
+!logs/.gitkeep
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.log
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# --- large data must never enter the code repository ---
+*.h5ad
+*.feather
+*.parquet
+*.npy
+*.npz
+!tests/fixtures/**
+
+# --- PRIVATE derived engineering outputs (real type names) ---
+# canonical graph / type graph are private-by-design and never committed
+derived_private/
+
+# --- pytest runtime temp (basetemp) ---
+.pytest_tmp/

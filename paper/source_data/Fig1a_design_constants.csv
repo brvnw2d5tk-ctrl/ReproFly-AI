@@ -1,0 +1,15 @@
+item,value,note
+candidate_universe_n,11657,frozen candidate universe
+glm_runs,10,Phase 2A formal runs
+charged_attempts_per_run,300,Phase 2A budget
+gt_pcd_m,13,PCD set size (Fig5A header)
+gt_lc10a_m,1,LC10a set size
+gt_crz_m,1,CRZ set size
+random_null_permutations,10000,PHASE2A_RANDOM_NULL.csv
+random_null_master_seed,20260925,PHASE2A_RANDOM_NULL.csv
+matched_arms,7,Phase 2C.1 non-LLM arms
+matched_runs_per_arm,100,Phase 2C.1 budget
+matched_trajectories,700,Phase 2C.1 total
+c2_anyhit,15,C2 any-hit runs
+d1_anyhit,33,D1 any-hit runs
+glm_anyhit,5,GLM any-hit runs

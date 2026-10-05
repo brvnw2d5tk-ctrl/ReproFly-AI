@@ -1,0 +1,11 @@
+field,value
+glm_median,0.028888888888888888
+glm_iqr,"[0.0, 0.12222222222222222]"
+d1_median,0.0
+d1_iqr,"[0.0, 0.11499999999999999]"
+d1_n,100
+glm_median_percentile_in_D1,68.0
+cliffs_delta,0.153
+permutation_T,0.028888888888888888
+permutation_p_two_sided,0.17698230176982302
+label,POST-HOC / EXPLORATORY ONLY

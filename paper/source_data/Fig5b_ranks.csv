@@ -1,0 +1,10 @@
+gt_set,target,baseline,median_rank,universe_n
+GTSET_LC10A,LC10a,weighted_strength,50.0,11657
+GTSET_LC10A,LC10a,weighted_pagerank,59.0,11657
+GTSET_LC10A,LC10a,baseline_visit_mass,1575.0,11657
+GTSET_PCD,PCD,weighted_strength,4911.0,11657
+GTSET_PCD,PCD,weighted_pagerank,2546.0,11657
+GTSET_PCD,PCD,baseline_visit_mass,3883.0,11657
+GTSET_CRZ,CRZ,weighted_strength,8377.0,11657
+GTSET_CRZ,CRZ,weighted_pagerank,7581.0,11657
+GTSET_CRZ,CRZ,baseline_visit_mass,10288.0,11657

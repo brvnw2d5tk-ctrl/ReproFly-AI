@@ -1,0 +1,56 @@
+{
+  "$schema": "https://zcode.dev/schemas/subagent-config.v1.json",
+  "name": "reprofly-scientist",
+  "description": "Formal blinded GLM-5.3 Scientist for the ReproFly-AI benchmark (Phase 2 execution; NOT to be launched in Phase 1E/1F before protocol lock).",
+  "version": "1.0",
+  "model": "GLM-5.3",
+  "fresh_context": true,
+  "injectAgentsMd": false,
+  "system_prompt_file": "config/agents/SCIENTIST_SYSTEM_PROMPT_v1.0.md",
+  "tools": {
+    "allowlist_mode": "exhaustive",
+    "mcp_servers": {
+      "reprofly": [
+        "get_run_status",
+        "list_candidate_ids",
+        "inspect_candidate",
+        "run_silencing",
+        "get_experiment_history",
+        "submit_final_candidates"
+      ]
+    },
+    "deny": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Bash",
+      "Edit",
+      "Write",
+      "WebSearch",
+      "WebFetch",
+      "browser",
+      "filesystem",
+      "inspect_full_graph",
+      "arbitrary_neighbors",
+      "find_arbitrary_path",
+      "sql",
+      "shell",
+      "file_read",
+      "web",
+      "python"
+    ]
+  },
+  "protocol": {
+    "oracle_release": "v1.0",
+    "benchmark_protocol": "v1_DRAFT (Phase 1E preregistration; human lock pending)",
+    "perturbation_budget": 300,
+    "structural_inspection_budget": 600,
+    "n_runs": 10,
+    "top_n_final": 50
+  },
+  "notes": [
+    "Permissions semantics are binding even if the host schema renames keys: model=GLM-5.3 only, fresh context per run, no AGENTS.md injection, tool access restricted EXACTLY to the six reprofly MCP tools above, all general-purpose tools denied.",
+    "Every run must be independently seeded with the same system prompt, tool schemas, candidate universe, oracle release, budgets, and protocol version. Runs never share conversation, history, or reasoning.",
+    "Reviewer/Skeptic roles are NOT part of the primary loop. A post-hoc protocol auditor may inspect logs after runs complete; it never sends suggestions to the Scientist and never modifies results."
+  ]
+}

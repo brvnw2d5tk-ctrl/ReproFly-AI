@@ -1,0 +1,17 @@
+metric,value
+primary_metric,AUTSRC
+target_set_sizes,"{""GTSET_LC10A"": 1, ""GTSET_PCD"": 13, ""GTSET_CRZ"": 1}"
+glm_n_runs,10
+glm_median_AUTSRC,0.028888888888888888
+glm_iqr_AUTSRC,"[0.0, 0.12222222222222222]"
+glm_median_random_null_percentile,36.425000000000004
+glm_n_above_null_median,5
+glm_n_above_null_p95,0
+weighted_strength_AUTSRC,0.27888888888888885
+weighted_pagerank_AUTSRC,0.26888888888888884
+baseline_visit_mass_AUTSRC,0.0
+random_null_permutations,10000
+random_null_master_seed,20260925
+random_null_median_AUTSRC,0.0
+random_null_p95_AUTSRC,0.2922222222222222
+gates_passed,"G1,G2,G3,G4,G5,G6,G7"

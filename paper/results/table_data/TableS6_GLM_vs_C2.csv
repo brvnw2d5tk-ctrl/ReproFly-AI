@@ -1,0 +1,6 @@
+field,value
+c2_median,0.0
+c2_iqr,"[0.0, 0.0]"
+c2_zero_frac,0.85
+glm_median_percentile_in_C2,85.0
+cliffs_delta,0.325

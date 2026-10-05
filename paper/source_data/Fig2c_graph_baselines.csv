@@ -1,0 +1,5 @@
+series,AUTSRC,iqr_low,iqr_high,kind
+weighted_strength,0.27888888888888885,,,full_information
+weighted_pagerank,0.26888888888888884,,,full_information
+baseline_visit_mass,0.0,,,full_information
+GLM,0.028888888888888888,0.0,0.12222222222222222,tool_mediated

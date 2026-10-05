@@ -1,0 +1,37 @@
+field,value
+record_kind,FORMAL_EXECUTION_ENVIRONMENT (GO section 26)
+generated_utc,2026-09-25T11:08:46.396344+00:00
+immutable,True
+git.HEAD,0b9910c75be27f94efe4662771a60fbc6cbe4806
+git.worktree_clean,True
+git.branch,main
+os.system,Windows
+os.release,11
+os.version,10.0.26200
+os.machine,AMD64
+python,"3.13.13 (tags/v3.13.13:01104ce, Apr  7 2026, 19:25:48) [MSC v.1944 64 bit (AMD64)]"
+packages.reprofly,0.1.0
+packages.numpy,2.5.3
+packages.scipy,1.18.1
+packages.polars,1.44.2
+packages.pydantic,2.13.5
+packages.openai,2.43.0
+provider.endpoint,ZhipuAI OpenAI-compatible (https://open.bigmodel.cn/api/paas/v4/)
+provider.requested_model,GLM-5.3
+provider.model_locked_by,LOCKED_DECISIONS #5 / budgets.SCIENTIST_MODEL
+provider.api_key_env_var,GLM_API_KEY
+provider.api_key_fingerprint,REDACTED_FOR_PUBLIC_RELEASE
+execution_hashes.oracle_manifest_v1_0_1,3c8bae3fb1d5903405f6d1915977b8aefa3862da9a3a715fc6fd6881e9e8769e
+execution_hashes.benchmark_manifest_v1_0_1,83661edb8a7872192e417b08cb14d05b84e7da630c87f1eb1f5a63be423cd1e9
+execution_hashes.candidate_universe,a2ec9c251f3e8981e79571b8dd69d05cf1b0a4db0ec5cf15546844b0d9b1f822
+execution_hashes.gt_mapping_v1_1,3f608ff23bef6445a45ca55e0409ada41ecf336606f1cdc95b8ecab9eea6184a
+execution_hashes.gt_scoring_universe_v1_1,1bc426d427a3aae9c09b686f9220a99aa60e5e53523af3af2acf205235bb7446
+execution_hashes.scientist_prompt,d672d77780a835139fc0b08c232386a5228d78d2ba6de11135bbe53059536fd3
+execution_hashes.tool_schema,c7908d7015d5baa2a2503b1cfed2bb5a73e150c93b38b0f633984e0d3a6712d7
+harness.location,derived_private/formal_execution/harness/ (gitignored; code HEAD untouched)
+harness.context_policy.max_window_chars,300000
+harness.context_policy.min_kept_messages,24
+harness.context_policy.full_conversation_preserved,True
+harness.oracle_baselines,frozen v1.0 L=10 values (bitwise-verified vs engine before launch)
+formal_run_ids,AI_RUN_001..AI_RUN_010 (preallocated)
+paper_run_silencing_mcp_server,DISABLED (engineering MCP untouched; real oracle reachable ONLY via the formal harness)
